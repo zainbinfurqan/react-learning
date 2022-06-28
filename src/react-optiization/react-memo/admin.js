@@ -29,4 +29,5 @@ const AdminTable = (props) => {
     );
 }
 
+// export default AdminTable;
 export default React.memo(AdminTable);

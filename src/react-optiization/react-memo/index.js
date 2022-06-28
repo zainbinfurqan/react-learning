@@ -18,9 +18,9 @@ function Index(props) {
     }
 
     useState(() => {
-        // handleLiveUserCounter()
+        handleLiveUserCounter()
         return () => {
-            // liveUserCounterInterval = null
+            liveUserCounterInterval = null
         }
     }, [])
 

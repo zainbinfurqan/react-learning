@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 
 function Index(props) {
 
     const [toDoList, setDoToList] = useState([]);
     const [value, setValue] = useState("");
 
-    const handleAddItem = (data) => {
+    const handleAddItem = useCallback((data) => {
         try {
 
             const temToDoList = toDoList;
@@ -14,7 +14,7 @@ function Index(props) {
         } catch (error) {
             console.log(error)
         }
-    }
+    })
 
     const handleDeleteitem = (id) => {
         try {
